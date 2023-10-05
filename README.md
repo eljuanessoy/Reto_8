@@ -93,3 +93,10 @@ print("---------")
 for x in range(1,10):
   print(9, x, 9*x,sep = ", ")
 ```
+
+###### Recuerda que sin importar tu 
+# **SEXO**
+###### puedes dejar una estrellita
+# **GRATIS**
+###### para apoyar el trabajo :D
+##### Hablando enserio si consideras que este repo fue de ayuda para ti, estaria muy agradecido si dejaras una estrellita, muchas gracias amix 🙏🙏🙏
