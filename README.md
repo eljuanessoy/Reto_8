@@ -1,4 +1,4 @@
-# Reto_8
+# Reto #8 😲
 By Juan Esteban Molina Rey (eljuanessoy)
 
 ### 1. Imprimir un listado con los números del 1 al 100 cada uno con su respectivo cuadrado.
