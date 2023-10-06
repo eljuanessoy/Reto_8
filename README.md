@@ -63,26 +63,15 @@ print(potencia)
 
 ```python
 def Potencia(n:float, x:int):
-  for i in range(1):
-    ResultadoPotencia = x**n
-    print(f"{x} elevado a la {n} es igual a {ResultadoPotencia}")
+  ResultadoPotencia : int = 1
+  for i in range(1,n+1):
+    ResultadoPotencia *= x
+  print(f"{x}^{n}={ResultadoPotencia}")
 
 n = int(input("Ingrese un numero natural: "))
 x = float(input("Ingrese un numero real: "))
 
 Potencia(n,x)
-```
-
-#### Otro posible codigo mas sencillo podria ser:
-
-```python
-n = int(input("Ingrese un numero natural: "))
-x = float(input("Ingrese un numero real: "))
-potencia : int = 1
-for i in range(1,n+1):
-  potencia *= x
-  
-print(potencia)
 ```
 
 ### 7. Diseñe un programa que muestre las tablas de multiplicar del 1 al 9.
