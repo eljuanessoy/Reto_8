@@ -5,6 +5,7 @@ By Juan Esteban Molina Rey (eljuanessoy)
 
 ```python
 for num in range(1, 101):
+  
     print(num, num**2, sep = ", ")
 ```
 
@@ -15,6 +16,7 @@ for z in range(1,1000,2):
   print(z)
 for z in range(1,1001):
   if z%2 == 0:
+    
     print(z)
 ```
 
@@ -24,6 +26,7 @@ for z in range(1,1001):
 x = int(input("Ingrese un numero: "))
 for x in range(x,1,-1):
   if x%2 == 0:
+  
     print(x)
 ```
 
@@ -52,32 +55,34 @@ n = int(input("Ingrese un numero: "))
 potencia : int = 1
 for i in range(1, n+1):
   potencia *= 2
+  
 print(potencia)
 ```
 
 ### 6. Leer un número natural n, leer otro dato de tipo real x y calcular x^n usando ciclos for.
 
 ```python
-n = int(input("Ingrese un numero natural: "))
-x = float(input("Ingrese un numero real: "))
-potencia : int = 1
-for i in range(1,n+1):
-  potencia = x**n
-print(potencia)
-```
-
-#### Otro posible codigo podria ser:
-
-```python
-n = int(input("Ingrese un numero natural: "))
-x = float(input("Ingrese un numero real: "))
-
 def Potencia(n:float, x:int):
   for i in range(1):
     ResultadoPotencia = x**n
     print(f"{x} elevado a la {n} es igual a {ResultadoPotencia}")
 
+n = int(input("Ingrese un numero natural: "))
+x = float(input("Ingrese un numero real: "))
+
 Potencia(n,x)
+```
+
+#### Otro posible codigo mas sencillo podria ser:
+
+```python
+n = int(input("Ingrese un numero natural: "))
+x = float(input("Ingrese un numero real: "))
+potencia : int = 1
+for i in range(1,n+1):
+  potencia *= x
+  
+print(potencia)
 ```
 
 ### 7. Diseñe un programa que muestre las tablas de multiplicar del 1 al 9.
