@@ -3,6 +3,8 @@ By Juan Esteban Molina Rey (eljuanessoy)
 
 ### 1. Imprimir un listado con los números del 1 al 100 cada uno con su respectivo cuadrado.
 
+En la resolución de este problema, decidi usar un ciclo "for" que opera en el rango de números del 1 al 101 ya que de esta forma incluira al 100 dentro de este bucle, despues se procede a imprimir los numero que estan en ese rango, en donde por un lado seran los numeros del rango y por otro lado estaran esos mismos numeros pero elevados al cuadrado.
+
 ```python
 for num in range(1, 101):
   
@@ -10,6 +12,10 @@ for num in range(1, 101):
 ```
 
 ### 2. Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000.
+
+Para solucionar este problema, usé dos bucles "for" en donde uno de ellos opera en el rango de números del 1 al 1001 incrementando cada 2 unidades, e inmediatamente despues de eso imprimo los numeros que obtuve en ese rango. 
+
+El otro bucle opera en el rango de numeros de 1 a 1001 pero que cada uno de esos numeros debera tener como residuo 0 al ser dividos entre 2, y que unicamente los que cumplan con esa condicion seran los que se van a imprimir usando "print()". Como resultado podremos ver una lista de numeros en donde comienza con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000.
 
 ```python
 for z in range(1,1000,2):
@@ -21,6 +27,8 @@ for z in range(1,1001):
 ```
 
 ### 3. Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado.
+
+
 
 ```python
 x = int(input("Ingrese un numero: "))
