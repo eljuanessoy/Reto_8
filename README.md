@@ -123,7 +123,31 @@ for n in range(1, 11):
 
 
 ```python
+import math as m
 
+x = float(input("Ingrese un valor: "))
+n = int(input("Ingrese la cantidad de iteraciones: "))
+
+def factorial(i:int):
+    if i == 0:
+        return 1
+    else:
+        p = 1
+        for n in range(1,i+1):
+            p *= n
+        return p
+ResultadoSuma : float = 0
+
+for b in range(0,n+1):
+    d = x**b
+    d = d/factorial(b)
+    ResultadoSuma += d
+z = (abs(ResultadoSuma - m.e ** x)/m.e ** x) * 100
+
+print()    
+print(ResultadoSuma)
+print(m.e ** x)
+print(f"El porcentaje de error es de {z}%")
 ```
 
 ### 9. Diseñar una función que permita calcular una aproximación de la función seno alrededor de 0 para cualquier valor x (real), utilizando los primeros n términos de la serie de Maclaurin. Nota: use math para traer la función seno y mostrar la diferencia entre el valor real y la aproximación.
@@ -131,7 +155,32 @@ for n in range(1, 11):
 
 
 ```python
+import math as m
 
+def Funcion(i: int):
+    if i == 0:
+        return 1
+    else:
+        p = 1
+        for numero in range(1, i + 1):
+            p *= numero
+        return p
+    
+x = float(input("Ingrese un valor en radianes: "))
+n = int(input("Ingrese la cantidad de iteraciones: "))
+
+suma : float = 0
+for b in range(n + 1):
+    d = (x ** (2 * b + 1)) / Funcion(2 * b + 1)
+    d *= (-1) ** b
+    suma += d
+    
+z = (abs(suma - m.sin(x))/m.sin(x))*100
+
+print()
+print(f"{suma}")
+print(f"{m.sin(x)}")
+print(f"El porcentaje de error es de {z}")
 ```
 
 ### 10. Diseñar una función que permita calcular una aproximación de la función arcotangente alrededor de 0 para cualquier valor x en el rango [-1, 1], utilizando los primeros n términos de la serie de Maclaurin. Nota: use math para traer la función arctan y mostrar la diferencia entre el valor real y la aproximación.
@@ -139,7 +188,23 @@ for n in range(1, 11):
 
 
 ```python
+import math as m
 
+x = float(input("Ingrese un valor en radianes: "))
+n = int(input("Ingrese la cantidad de iteraciones: "))
+
+suma = 0
+for b in range(n + 1):
+    d = (x ** (2 * b + 1)) / (2 * b + 1)
+    d *= (-1) ** b
+    suma += d
+
+z = (abs(suma - m.atan(x))/m.atan(x))*100
+
+print()
+print(f"{suma}")
+print(f"{m.atan(x)}")
+print(f"El porcentaje de error es de {z}")
 ```
 
 ###### Recuerda que sin importar tu 
